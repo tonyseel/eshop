@@ -158,7 +158,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#747474', end
 .right_nav { display:none;}
 .border-main { background:url(../../image/eshop/border_bg.png) center repeat-x; height:6px; clear:both;}
 .banner-bk { background:url(../../image/eshop/banner_ptrn.png) center repeat;}
-.banner-main { background:url(../../image/eshop/banner_bg.png) center top repeat; padding-top:35px; padding-bottom:23px;}
+.banner-main {  padding-top:35px; padding-bottom:23px;}
 .banner-text h1 { color:#fff; font:700 70px/50px 'Roboto', sans-serif; text-transform:uppercase; text-align:right; margin-top:0;}
 .banner-text h2 { color:#b3b3b3; font:400 25px 'Roboto Condensed', sans-serif; text-transform:uppercase; text-align:right; padding-bottom:0; margin-bottom:0;}
 .call-now-text { background-color:#ee5b30; position:relative;color:#fff; font:400 29px 'Roboto Condensed', sans-serif; width:73%; text-align:right; padding:12px 40px 12px 80px; float:right; margin-top:30px;}
@@ -171,8 +171,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#747474', end
 .banner-left, .banner-right { position:relative;}
 .banner-left .left_img { position:absolute; width:247px; height:345px; left:0; top:121px; z-index:9;}
 .banner-right .right_img { position:absolute; width:408px; height:418px; right:0; top:48px;}
-.feature-banner-main { background:url(../../image/eshop/patrn_2.png) center repeat; border-bottom:#fff 1px solid;}
-.feature-banner { background:url(../../image/eshop/feature_caption.png) center top repeat-x;}
+.feature-banner-main { border-bottom:#fff 1px solid;}
+.feature-banner { }
 .feature-banner h2 { text-align:center;color:#fff; font:400 30px 'Roboto Condensed', sans-serif;}
 .feature-banner h2 span {color:#ee5b30; font-weight:700;}
 .feature-banner ul { list-style:none; margin:0; padding:0; margin-bottom:25px;}
@@ -296,7 +296,7 @@ ul.product-nav li:nth-child(3n) { margin-right:0; }
 .btn-warning {  background-color:#ee5b30; border-color:#ee5b30;}
 .btn-warning:hover { background-color:#f3673e;border-color:f3673e !important;}
 footer { background-color:#181818; border-bottom:#ee5b30 5px solid; margin-top:34px;}
-.footer { background:url(../../image/eshop/footer_bg.png) center bottom repeat-x; text-align:center; color:#919191;    font: 400 15px 'Roboto Condensed', sans-serif; padding-top:30px; padding-bottom:25px}
+.footer { text-align:center; color:#919191;    font: 400 15px 'Roboto Condensed', sans-serif; padding-top:30px; padding-bottom:25px}
 .footer span {color:#ee5b30;}
 .footer-link { color:#fff;}
 .footer-link a { text-decoration:none; color:#fff; padding:0 4px;}
