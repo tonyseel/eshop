@@ -1,9 +1,35 @@
-<!DOCTYPE html>
-<html>
-<body>
+---
+layout: default
+title: car
+permalink: /car/
+---
 
-<p>This is a paragraph.</p>
-<p>This is another paragraph.</p>
+<!--innerpage product sectiomnstart-->
+<div class="border-main"></div>
+    <div class="contents home-contents contents_inner">
+    	<div class="container">
+        <h2>Here&#8217;s a Few <span>CARS</span> For Sale But We Have 100&#8217;s More</h2>
+            <div class="clear_20"></div>
+        	<div class="row">
+            	<div class="col-lg-12">
+                	<ul class="product-nav">
 
-</body>
-</html>
+                	{% for car in site.data.car-section %}
+                       <li>
+                            <div class="gallery-box">
+                                <a href="subpage/1/car1.html"><img src="{{site.baseurl}}/{{car.productimg}}"></a>
+                                <p><a href="subpage/1/car1.html">{{car.productcontent}}</a></p>
+                                <div class="glr-btns">
+                                	<ul>
+                                    	<li><a href="subpage/1/car1.html" class="dtl">Car Details</a></li>
+                                    	<li><a href="subpage/1/car1.html">Get Approved</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                      {% endfor %}  
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </div>
