@@ -1,0 +1,58 @@
+--- 
+layout: default 
+title: Blog
+---
+<div class="intro intro-archives">
+<h1 class="title title-large">Blog</h1>
+<div class="category-excerpt">
+    <p>Each of your categories can also have a description, so that it will organize your posts much more efficiently. This is yet another SEO advantage.</p>
+</div>
+</div>
+<ul class="posts-archive">
+   {% for post in paginator.posts %}
+     {% if post.categories contains 'blog' %}
+    <li>
+        <div class="post-thumb">
+            <a href="#" title="Ad pulvinar blandit libero suscipit sit facilisi"><img src="{{site.baseurl}}/image/blog/{{post.image}}" alt="Ad pulvinar blandit libero suscipit sit facilisi" class="Thumbnail thumbnail loop-main " width="140" height="90" /></a>
+        </div>
+        <div class="post-excerpt blog">
+            <p class="postmetadata blog">
+                <span><time datetime="2015-08-13" pubdate class="blog">{{post.date | date:"%B %-d, %Y"}}</time></span>
+            </p>
+            <h2 class="blog"><a href="{{site.baseurl}}{{post.url}}" title="Permanent link to{site.baseurl}}{{post.url}}"></a>{{post.title}} </h2>
+            <p>{{post.excerpt | strip_html | truncatewords:28 }}</p>
+            <span class="more"><a href="{{site.baseurl}}{{post.url}}">continue reading &rarr;</a></span>
+        </div>
+        <!-- end .post-excerpt -->
+        <div class="cleaner">&nbsp;</div>
+    </li>
+     {% endif %}
+   {% endfor %}
+  
+</ul>
+    {% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-num">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="page-num">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
+

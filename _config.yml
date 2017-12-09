@@ -1,0 +1,27 @@
+# site setting
+title: Welcome to Erudito Theme Demo
+baseurl: /wpzoom
+description: I’m <strong>Bennet Freeman</strong> and I love fashion, food, technology, but most of all life. Here in this <em>blog</em>, I always make sure that I create valuable content that attracts attention and drives traffic <a href="https://jeriljose.github.io/wpzoom/about/">... Read more »</a>.
+tagline: "basic guide on jekyl"
+
+#build setting
+markdown: kramdown
+  
+exclude: ['README.md']
+permalink: pretty #to remove .html
+
+#Pagination
+paginate: 10
+paginate_path: '/blog/page:num/'
+
+#sociallinks
+facebook_username: crigroups
+twitter_username: crigroups   
+instagram_username: crigroups
+youtube_username: crigroups
+
+#frontpage
+featured-category: Health
+
+include: ['_pages']
+comments: True

@@ -1,0 +1,35 @@
+<div id="featured-posts-wrapper">
+    <div id="featured-posts" class="flexslider">
+        <ul class="bxslider">
+            {% for post in site.posts %}
+             {% if post.categories contains 'blog' %}
+               {% if post.slider %}
+            <li><img src="image/blog/{{post.slider}}" />
+                <div class="post-body">
+                    <h2><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h2>
+                    <p>{{post.excerpt | strip_html | truncatewords:28 }}</p>
+                    <div class="cleaner">&nbsp;</div>
+                </div>
+            </li>
+               {% endif %}
+             {% endif %}   
+            {% endfor %}
+        </ul>
+    </div>
+    <div id="featured-navigation" class="flexslider">
+        <!-- end .slides -->
+        <div class="flex-viewport" style="overflow: hidden; position: relative;">
+        <ul class="slides" style="width: 1000%; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                <li class="" style="width: 40px; float: left; display: block;">
+                    <a href="{{site.baseurl}}{{post.url}}" rel="nofollow"><img src="image/blog/university-30x30.jpg" alt="{{post.title}}" class="Thumbnail thumbnail homepage-slider-thumbs " width="30" height="30"></a>
+                </li>
+                <li class="" style="width: 40px; float: left; display: block;">
+                    <a href="{{site.baseurl}}{{post.url}}" rel="nofollow"><img src="image/blog/photodune-739058-capitol-hill-building-washington-dc-s-30x30.jpg" alt="Capitol Hill Building ,Washington DC." class="Thumbnail thumbnail homepage-slider-thumbs " width="30" height="30"></a>
+                </li>
+                <li class="flex-active-slide" style="width: 40px; float: left; display: block;">
+                    <a href="{{site.baseurl}}{{post.url}}" rel="nofollow"><img src="image/blog/photodune-1107867-city-bike-m-30x30.jpg" alt="Bikes are the most common method of transportation for students" class="Thumbnail thumbnail homepage-slider-thumbs " width="30" height="30"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

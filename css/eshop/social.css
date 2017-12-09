@@ -1,0 +1,910 @@
+/*****************************/
+
+/* Copyright by CreativeDive */
+
+/*****************************/
+
+
+
+.color.blue {font-weight:600;color:#1787d6}
+
+.color.grey {font-weight:600;color:#b5b5b5}
+
+.color.green {font-weight:600;color:#509b07}
+
+.color.orange {font-weight:600;color:#d18117}
+
+.color.yellow {font-weight:600;color:#c8a208}
+
+.color.red {font-weight:600;color:#d30100}
+
+.color.purple {font-weight:600;color:#9a0fb8}
+
+.color.pink {font-weight:600;color:#b4039d}
+
+
+
+
+
+.absolute .pos-left {position:absolute!important;top:20px!important;left:0px!important}
+
+.absolute .pos-right {position:absolute!important;top:20px!important;right:0px!important}
+
+.absolute .pos-top {position:absolute!important;top:0px!important;left:20px!important}
+
+.absolute .pos-bottom {position:absolute!important;bottom:0px!important;left:20px!important}
+
+
+
+/* DOCUMENTATION CSS */
+
+
+
+.content-in {background:#fff;padding:20px;font-size:13px}
+
+
+
+.content-in table {border-collapse:collapse;float:left;clear:both;width:100%;margin:0px;background:#fff;border:1px solid #fff;
+
+box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none}
+
+
+
+.content-in td {padding:5px;border:1px dotted #ccc;font-size:13px;text-align:center;color:#000}
+
+
+
+td.light {background:#d9d9d9 url("../images/icons/background.html") repeat-y center top;padding:20px}
+
+td.dark {background:#060606 url("../images/icons/background-dark.html") repeat-y center top;padding:20px}
+
+td.transparent {background:#d9d9d9 url("../images/icons/background-transparent.html") repeat-y center top fixed;padding:20px}
+
+
+
+code {font-family:"Courier New", monospace, Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco;color:#27BB0A;font-size:12px}
+
+
+
+pre code {
+
+font-family:"Courier New", monospace, Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco;
+
+display:block;
+
+clear:both;
+
+background:#000;
+
+padding:20px 0px 20px 0px;
+
+color:#fff;
+
+font-size:12px;
+
+overflow:auto;
+
+line-height:16px;
+
+margin:0px 0px 0px 0px;
+
+white-space:pre;
+
+width:100%
+
+}
+
+
+
+pre span {font-family:"Courier New", monospace, Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco;font-size:12px}
+
+
+
+
+
+/* BEGIN SOCIAL SIDEBAR CSS */
+
+
+
+.sidebar {font-family:'Open Sans', sans-serif, Segoe UI light;font-weight:300}
+
+.sidebar a {color:#fff}
+
+.sidebar a:hover {text-decoration:none}
+
+
+
+.sidebar {font-size:13px}
+
+
+
+.pos-left .sidebar-content, .pos-right .sidebar-content, .pos-left .sidebarmenu-inner, .pos-right .sidebarmenu-inner {float:left;clear:both;text-decoration:none}
+
+.pos-top .sidebar-content, .pos-bottom .sidebar-content, .pos-top .sidebarmenu-inner, .pos-bottom .sidebarmenu-inner {float:left;text-decoration:none}
+
+
+
+.sidebar-content {height:100%;width:100%;cursor:pointer}
+
+
+
+/*** sidebar positions ***/
+
+
+
+.pos-left {position:fixed;top:209px;left:0px; z-index:99999 !important;}
+
+.pos-right {position:fixed;top:325px;right:0px; z-index:99999 !important;}
+
+.pos-top {position:fixed;top:0px;left:100px}
+
+.pos-bottom {position:fixed;bottom:0px;left:100px}
+
+
+
+/******************** WITHOUT TEXT *****************************/
+
+
+
+/*** sidebar buttons ***/
+
+
+
+/* show - slide out */
+
+
+
+.pos-left.show .sidebar-content:hover {width:64px}
+
+.pos-right.show .sidebar-content {margin-right:32px}
+
+.pos-right.show .sidebar-content:hover {width:64px;margin-right:0px}
+
+.pos-top.show .sidebar-content:hover {height:64px}
+
+.pos-bottom.show .sidebar-content {margin-top:32px}
+
+.pos-bottom.show .sidebar-content:hover {height:64px;margin-top:0px}
+
+.pos-bottom.icon-text.show .sidebar-content:hover {margin-top:32px}
+
+
+
+/* hidden - slide out */
+
+
+
+.pos-left.hidden .sidebar-content {margin-left:-16px}
+
+.pos-left.hidden .sidebar-content:hover {margin-left:0px}
+
+.pos-right.hidden .sidebar-content {margin-right:-16px}
+
+.pos-right.hidden .sidebar-content:hover {margin-left:-16px}
+
+.pos-top.hidden .sidebar-content {margin-top:-16px}
+
+.pos-top.hidden .sidebar-content:hover {margin-top:0px}
+
+.pos-bottom.hidden .sidebar-content {margin-bottom:-16px}
+
+.pos-bottom.hidden .sidebar-content:hover {margin-top:-16px;margin-bottom:0px}
+
+
+
+/*** sidebar menu ***/
+
+
+
+.sidebarmenu {float:left}
+
+
+
+.pos-left .sidebarmenu:hover .sidebar-content {margin-left:0px}
+
+.pos-left .sidebarmenu .sidebar-content:hover {width:64px}
+
+.pos-right .sidebarmenu:hover .sidebar-content {margin-right:0px}
+
+.pos-right .sidebarmenu .sidebar-content {margin-left:32px}
+
+.pos-right .sidebarmenu .sidebar-content:hover {width:64px;margin-left:0px}
+
+.pos-right.hidden .sidebarmenu:hover {margin-right:0px}
+
+.pos-top .sidebarmenu:hover .sidebar-content {margin-top:0px}
+
+.pos-top .sidebarmenu .sidebar-content:hover {height:64px}
+
+.pos-bottom .sidebarmenu .sidebar-content {margin-top:32px}
+
+.pos-bottom .sidebarmenu .sidebar-content:hover {height:64px;margin-top:0px}
+
+
+
+.share-button {margin:0px!important}
+
+
+
+.pos-left.icon .share-button {width:100%}
+
+.pos-right.icon .share-button {width:100%}
+
+.pos-top.icon .share-button {height:100%}
+
+.pos-bottom.icon .share-button {height:100%}
+
+
+
+.pos-left.hidden .sidebarmenu {margin-left:-32px}
+
+.pos-left.hidden .sidebarmenu:hover {margin-left:0px}
+
+.pos-right.hidden .sidebarmenu {margin-right:-32px}
+
+.pos-right.hidden .sidebarmenu:hover {margin-left:-32px}
+
+.pos-top.hidden .sidebarmenu {margin-top:-32px}
+
+.pos-top.hidden .sidebarmenu:hover {margin-top:0px}
+
+.pos-bottom.hidden .sidebarmenu {margin-bottom:-32px}
+
+.pos-bottom.hidden .sidebarmenu:hover {margin-top:-32px;margin-bottom:0px}
+
+
+
+/*** icon ***/
+
+
+
+.icon .sidebar-content {width:48px;height:48px}
+
+
+
+.pos-left.icon .share-button, .pos-right.icon .share-button {width:64px;height:32px}
+
+.pos-top.icon .share-button, .pos-bottom.icon .share-button {width:32px;height:64px}
+
+
+
+
+
+/******************** WITH TEXT *****************************/
+
+
+
+/*** icon-text ***/
+
+
+
+/* icon-text sidebar buttons */
+
+
+
+.pos-left.icon-text .sidebar-content {width:32px;height:32px}
+
+.pos-left.icon-text .sidebar-content:hover {width:auto;height:32px}
+
+
+
+.pos-right.icon-text .sidebar-inner {position:relative;float:left;clear:both;height:32px;width:32px}
+
+.pos-right.icon-text .sidebar-content {position:absolute;top:0px;right:0px;height:32px;width:32px}
+
+.pos-right.icon-text .sidebar-content:hover {width:auto}
+
+
+
+.pos-top.icon-text .sidebar-content {width:32px;height:32px}
+
+.pos-top.icon-text .sidebar-content:hover {width:auto;height:32px}
+
+
+
+.pos-bottom.icon-text .sidebar-content {width:32px;height:32px}
+
+.pos-bottom.icon-text .sidebar-content:hover {width:auto;height:32px}
+
+
+
+/* icon-text sidebarmenu */
+
+
+
+.pos-left.icon-text .share-button, .pos-right.icon-text .share-button {width:64px!important;height:32px!important}
+
+.pos-top.icon-text .share-button, .pos-bottom.icon-text .share-button {width:32px!important;height:64px!important}
+
+
+
+.pos-right.icon-text .sidebarmenu .share-button {position:relative;float:left;clear:both;height:32px}
+
+.pos-right.icon-text .sidebarmenu .sidebar-inner {position:relative;float:left;clear:both;height:32px;width:32px}
+
+.pos-right.icon-text .sidebarmenu .sidebar-content {position:absolute;top:0px;right:0px;height:32px;width:32px}
+
+.pos-right.icon-text .sidebarmenu .sidebar-content:hover {width:auto}
+
+
+
+.pos-top.icon-text .sidebarmenu .sidebar-inner {float:left}
+
+
+
+.pos-bottom.icon-text .sidebarmenu .sidebar-inner {float:left;}
+
+.pos-bottom.icon-text .sidebarmenu .sidebar-content:hover {width:auto}
+
+.pos-bottom.icon-text .sidebarmenu .sidebar-content {margin-top:32px}
+
+
+
+.pos-left.icon-text .sidebar-content:hover span {display:inline-block;padding:6px 12px 0px 38px;opacity:1.0}
+
+.pos-right.icon-text .sidebar-content:hover span {display:inline-block;padding:6px 38px 0px 12px;opacity:1.0}
+
+.pos-top.icon-text .sidebar-content:hover span {display:inline-block;padding:6px 12px 0px 38px;opacity:1.0}
+
+.pos-bottom.icon-text .sidebar-content:hover span {display:inline-block;padding:6px 12px 0px 38px;opacity:1.0}
+
+.icon-text .sidebar-content span {display:none;opacity:0;white-space:nowrap}
+
+
+
+.pos-left.icon-text .sidebar-content {background-position:center left;background-repeat:no-repeat}
+
+.pos-right.icon-text .sidebar-content {background-position:center right;background-repeat:no-repeat}
+
+.pos-top.icon-text .sidebar-content {background-position:center left;background-repeat:no-repeat}
+
+.pos-bottom.icon-text .sidebar-content {background-position:center left;background-repeat:no-repeat}
+
+
+
+/* icons */
+
+
+
+.icon .sidebar-content, .icon-text .sidebar-content {background-position:center center;background-repeat:no-repeat}
+
+
+
+.ico-facebook {background-color:#3d5999;background-image:url("../images/icons/s_icon_1.png")}
+
+.light .ico-facebook {background-image:url("../image/icons/facebook-light.html")}
+
+.dark .ico-facebook {background-image:url("../images/icons/facebook-dark.html")}
+
+
+
+.ico-twitter {background-color:#00aced;background-image:url("../images/icons/s_icon_2.png")}
+.ico-mail {background-color:#738a8d;background-image:url("../images/icons/s_icon_3.png")}
+.ico-fax {background-color:#738a8d;background-image:url("../images/icons/s_icon_4.png")}
+.ico-gmail {background-color:#484848;background-image:url("../images/icons/s_icon_5.png")}
+.ico-plus {background-color:#f8694d;background-image:url("../images/icons/s_icon_6.png")}
+
+.light .ico-twitter {background-color:#00aced;background-image:url("../images/icons/twitter-light.html")}
+
+.dark .ico-twitter {background-color:#00aced;background-image:url("../images/icons/twitter-dark.html")}
+
+
+
+.ico-pinterest {background-color:#d73532;background-image:url("../images/icons/pinterest.html")}
+
+.light .ico-pinterest {background-color:#d73532;background-image:url("../images/icons/pinterest-light.html")}
+
+.dark .ico-pinterest {background-color:#d73532;background-image:url("../images/icons/pinterest-dark.html")}
+
+
+
+.ico-linkedin {background-color:#1793bb;background-image:url("../images/icons/linkedin.html")}
+
+.light .ico-linkedin {background-color:#1793bb;background-image:url("../images/icons/linkedin-light.html")}
+
+.dark .ico-linkedin {background-color:#1793bb;background-image:url("../images/icons/linkedin-dark.html")}
+
+
+
+.ico-flickr {background-color:#f9007f;background-image:url("../images/icons/flickr.html")}
+
+.light .ico-flickr {background-color:#f9007f;background-image:url("../images/icons/flickr-light.html")}
+
+.dark .ico-flickr {background-color:#f9007f;background-image:url("../images/icons/flickr-dark.html")}
+
+
+
+.ico-google-plus {background-color:#bd301c;background-image:url("../images/icons/google-plus.html")}
+
+.light .ico-google-plus {background-color:#bd301c;background-image:url("../images/icons/google-plus-light.html")}
+
+.dark .ico-google-plus {background-color:#bd301c;background-image:url("../images/icons/google-plus-dark.html")}
+
+
+
+.ico-vimeo {background-color:#41b2dc;background-image:url("../images/icons/vimeo.html")}
+
+.light .ico-vimeo {background-color:#41b2dc;background-image:url("../images/icons/vimeo-light.html")}
+
+.dark .ico-vimeo {background-color:#41b2dc;background-image:url("../images/icons/vimeo-dark.html")}
+
+
+
+.ico-youtube {background-color:#c8312b;background-image:url("../images/icons/youtube.html")}
+
+.light .ico-youtube {background-color:#c8312b;background-image:url("../images/icons/youtube-light.html")}
+
+.dark .ico-youtube {background-color:#c8312b;background-image:url("../images/icons/youtube-dark.html")}
+
+
+
+.ico-digg {background-color:#1b5891;background-image:url("../images/icons/digg.html")}
+
+.light .ico-digg {background-color:#1b5891;background-image:url("../images/icons/digg-light.html")}
+
+.dark .ico-digg {background-color:#1b5891;background-image:url("../images/icons/digg-dark.html")}
+
+
+
+.ico-soundcloud {background-color:#ff5419;background-image:url("../images/icons/soundcloud.html")}
+
+.light .ico-soundcloud {background-color:#ff5419;background-image:url("../images/icons/soundcloud-light.html")}
+
+.dark .ico-soundcloud {background-color:#ff5419;background-image:url("../images/icons/soundcloud-dark.html")}
+
+
+
+.ico-android {background-color:#a5c63b;background-image:url("../images/icons/android.html")}
+
+.light .ico-android {background-color:#a5c63b;background-image:url("../images/icons/android-light.html")}
+
+.dark .ico-android {background-color:#a5c63b;background-image:url("../images/icons/android-dark.html")}
+
+
+
+.ico-rss {background-color:#f48022;background-image:url("../images/icons/rss.html")}
+
+.light .ico-rss {background-color:#f48022;background-image:url("../images/icons/rss-light.html")}
+
+.dark .ico-rss {background-color:#f48022;background-image:url("../images/icons/rss-dark.html")}
+
+
+
+.ico-creativecloud {background-color:#b4100f;background-image:url("../images/icons/creativecloud.html")}
+
+.light .ico-creativecloud {background-color:#b4100f;background-image:url("../images/icons/creativecloud-light.html")}
+
+.dark .ico-creativecloud {background-color:#b4100f;background-image:url("../images/icons/creativecloud-dark.html")}
+
+
+
+.ico-blog {background-color:#ff6600;background-image:url("../images/icons/blog.html")}
+
+.light .ico-blog {background-color:#ff6600;background-image:url("../images/icons/blog-light.html")}
+
+.dark .ico-blog {background-color:#ff6600;background-image:url("../images/icons/blog-dark.html")}
+
+
+
+.ico-instagram {background-color:#557ca2;background-image:url("../images/icons/instagram.html")}
+
+.light .ico-instagram {background-color:#557ca2;background-image:url("../images/icons/instagram-light.html")}
+
+.dark .ico-instagram {background-color:#557ca2;background-image:url("../images/icons/instagram-dark.html")}
+
+
+
+.ico-wordpress {background-color:#454442;background-image:url("../images/icons/wordpress.html")}
+
+.light .ico-wordpress {background-color:#454442;background-image:url("../images/icons/wordpress-light.html")}
+
+.dark .ico-wordpress {background-color:#454442;background-image:url("../images/icons/wordpress-dark.html")}
+
+
+
+.ico-deviantart {background-color:#5f716f;background-image:url("../images/icons/deviantart.html")}
+
+.light .ico-deviantart {background-color:#5f716f;background-image:url("../images/icons/deviantart-light.html")}
+
+.dark .ico-deviantart {background-color:#5f716f;background-image:url("../images/icons/deviantart-dark.html")}
+
+
+
+.ico-skype {background-color:#00b8ed;background-image:url("../images/icons/skype.html")}
+
+.light .ico-skype {background-color:#00b8ed;background-image:url("../images/icons/skype-light.html")}
+
+.dark .ico-skype {background-color:#00b8ed;background-image:url("../images/icons/skype-dark.html")}
+
+
+
+.ico-xing {background-color:#00605e;background-image:url("../images/icons/xing.html")}
+
+.light .ico-xing {background-color:#00605e;background-image:url("../images/icons/xing-light.html")}
+
+.dark .ico-xing {background-color:#00605e;background-image:url("../images/icons/xing-dark.html")}
+
+
+
+.ico-yahoo {background-color:#8f24aa;background-image:url("../images/icons/yahoo.html")}
+
+.light .ico-yahoo {background-color:#8f24aa;background-image:url("../images/icons/yahoo-light.html")}
+
+.dark .ico-yahoo {background-color:#8f24aa;background-image:url("../images/icons/yahoo-dark.html")}
+
+
+
+.ico-tumblr {background-color:#395976;background-image:url("../images/icons/tumblr.html")}
+
+.light .ico-tumblr {background-color:#395976;background-image:url("../images/icons/tumblr-light.html")}
+
+.dark .ico-tumblr {background-color:#395976;background-image:url("../images/icons/tumblr-dark.html")}
+
+
+
+.ico-stumbleupon {background-color:#63af20;background-image:url("../images/icons/stumbleupon.html")}
+
+.light .ico-stumbleupon {background-color:#63af20;background-image:url("../images/icons/stumbleupon-light.html")}
+
+.dark .ico-stumbleupon {background-color:#63af20;background-image:url("../images/icons/stumbleupon-dark.html")}
+
+
+
+.ico-myspace {background-color:#000000;background-image:url("../images/icons/myspace.html")}
+
+.light .ico-myspace {background-color:#000000;background-image:url("../images/icons/myspace-light.html")}
+
+.dark .ico-myspace {background-color:#000000;background-image:url("../images/icons/myspace-dark.html")}
+
+
+
+.ico-dribbble {background-color:#f26798;background-image:url("../images/icons/dribbble.html")}
+
+.light .ico-dribbble {background-color:#f26798;background-image:url("../images/icons/dribbble-light.html")}
+
+.dark .ico-dribbble {background-color:#f26798;background-image:url("../images/icons/dribbble-dark.html")}
+
+
+
+.ico-apple {background-color:#7e878b;background-image:url("../images/icons/apple.html")}
+
+.light .ico-apple {background-color:#7e878b;background-image:url("../images/icons/apple-light.html")}
+
+.dark .ico-apple {background-color:#7e878b;background-image:url("../images/icons/apple-dark.html")}
+
+
+
+.ico-behance {background-color:#1377ff;background-image:url("../images/icons/behance.html")}
+
+.light .ico-behance {background-color:#1377ff;background-image:url("../images/icons/behance-light.html")}
+
+.dark .ico-behance {background-color:#1377ff;background-image:url("../images/icons/behance-dark.html")}
+
+
+
+.ico-addthis {background-color:#ff835e;background-image:url("../images/icons/addthis.html")}
+
+.light .ico-addthis {background-color:#ff835e;background-image:url("../images/icons/addthis-light.html")}
+
+.dark .ico-addthis {background-color:#ff835e;background-image:url("../images/icons/addthis-dark.html")}
+
+
+
+.ico-aim {background-color:#ff201a;background-image:url("../images/icons/aim.html")}
+
+.light .ico-aim {background-color:#ff201a;background-image:url("../images/icons/aim-light.html")}
+
+.dark .ico-aim {background-color:#ff201a;background-image:url("../images/icons/aim-dark.html")}
+
+
+
+.ico-amazon {background-color:#ff8322;background-image:url("../images/icons/amazon.html")}
+
+.light .ico-amazon {background-color:#ff8322;background-image:url("../images/icons/amazon-light.html")}
+
+.dark .ico-amazon {background-color:#ff8322;background-image:url("../images/icons/amazon-dark.html")}
+
+
+
+.ico-aws {background-color:#ff7233;background-image:url("../images/icons/aws.html")}
+
+.light .ico-aws {background-color:#ff7233;background-image:url("../images/icons/aws-light.html")}
+
+.dark .ico-aws {background-color:#ff7233;background-image:url("../images/icons/aws-dark.html")}
+
+
+
+.ico-bebo {background-color:#ff001a;background-image:url("../images/icons/bebo.html")}
+
+.light .ico-bebo {background-color:#ff001a;background-image:url("../images/icons/bebo-light.html")}
+
+.dark .ico-bebo {background-color:#ff001a;background-image:url("../images/icons/bebo-dark.html")}
+
+
+
+.ico-brightkite {background-color:#69df3f;background-image:url("../images/icons/brightkite.html")}
+
+.light .ico-brightkite {background-color:#69df3f;background-image:url("../images/icons/brightkite-light.html")}
+
+.dark .ico-brightkite {background-color:#69df3f;background-image:url("../images/icons/brightkite-dark.html")}
+
+
+
+.ico-dailybooth {background-color:#17a3fb;background-image:url("../images/icons/dailybooth.html")}
+
+.light .ico-dailybooth {background-color:#17a3fb;background-image:url("../images/icons/dailybooth-light.html")}
+
+.dark .ico-dailybooth {background-color:#17a3fb;background-image:url("../images/icons/dailybooth-dark.html")}
+
+
+
+.ico-designfloat {background-color:#ff9811;background-image:url("../images/icons/designfloat.html")}
+
+.light .ico-designfloat {background-color:#ff9811;background-image:url("../images/icons/designfloat-light.html")}
+
+.dark .ico-designfloat {background-color:#ff9811;background-image:url("../images/icons/designfloat-dark.html")}
+
+
+
+.ico-dropbox {background-color:#008bd3;background-image:url("../images/icons/dropbox.html")}
+
+.light .ico-dropbox {background-color:#008bd3;background-image:url("../images/icons/dropbox-light.html")}
+
+.dark .ico-dropbox {background-color:#008bd3;background-image:url("../images/icons/dropbox-dark.html")}
+
+
+
+.ico-evernote {background-color:#87c441;background-image:url("../images/icons/evernote.html")}
+
+.light .ico-evernote {background-color:#87c441;background-image:url("../images/icons/evernote-light.html")}
+
+.dark .ico-evernote {background-color:#87c441;background-image:url("../images/icons/evernote-dark.html")}
+
+
+
+.ico-forrst {background-color:#00a26c;background-image:url("../images/icons/forrst.html")}
+
+.light .ico-forrst {background-color:#00a26c;background-image:url("../images/icons/forrst-light.html")}
+
+.dark .ico-forrst {background-color:#00a26c;background-image:url("../images/icons/forrst-dark.html")}
+
+
+
+.ico-github {background-color:#3b3b3b;background-image:url("../images/icons/github.html")}
+
+.light .ico-github {background-color:#3b3b3b;background-image:url("../images/icons/github-light.html")}
+
+.dark .ico-github {background-color:#3b3b3b;background-image:url("../images/icons/github-dark.html")}
+
+
+
+.ico-lastfm {background-color:#e02703;background-image:url("../images/icons/lastfm.html")}
+
+.light .ico-lastfm {background-color:#e02703;background-image:url("../images/icons/lastfm-light.html")}
+
+.dark .ico-lastfm {background-color:#e02703;background-image:url("../images/icons/lastfm-dark.html")}
+
+
+
+.ico-picasa {background-color:#797979;background-image:url("../images/icons/picasa.html")}
+
+.light .ico-picasa {background-color:#797979;background-image:url("../images/icons/picasa-light.html")}
+
+.dark .ico-picasa {background-color:#797979;background-image:url("../images/icons/picasa-dark.html")}
+
+
+
+.ico-reddit {background-color:#20a6d9;background-image:url("../images/icons/reddit.html")}
+
+.light .ico-reddit {background-color:#20a6d9;background-image:url("../images/icons/reddit-light.html")}
+
+.dark .ico-reddit {background-color:#20a6d9;background-image:url("../images/icons/reddit-dark.html")}
+
+
+
+.ico-spotify {background-color:#7bb82f;background-image:url("../images/icons/spotify.html")}
+
+.light .ico-spotify {background-color:#7bb82f;background-image:url("../images/icons/spotify-light.html")}
+
+.dark .ico-spotify {background-color:#7bb82f;background-image:url("../images/icons/spotify-dark.html")}
+
+
+
+.ico-delicious {background-color:#2745a8;background-image:url("../images/icons/delicious.html")}
+
+.light .ico-delicious {background-color:#2745a8;background-image:url("../images/icons/delicious-light.html")}
+
+.dark .ico-delicious {background-color:#2745a8;background-image:url("../images/icons/delicious-dark.html")}
+
+
+
+.ico-share {background-color:#0c8854;background-image:url("../images/icons/share.html")}
+
+.light .ico-share {background-color:#0c8854;background-image:url("../images/icons/share-light.html")}
+
+.dark .ico-share {background-color:#0c8854;background-image:url("../images/icons/share-dark.html")}
+
+
+
+.pos-left .share-button {background-position:right center!important;background-repeat:no-repeat}
+
+.pos-right .share-button {background-position:left center!important;background-repeat:no-repeat}
+
+.pos-top .share-button {background-position:center bottom!important;background-repeat:no-repeat}
+
+.pos-bottom .share-button {background-position:center top!important;background-repeat:no-repeat}
+
+
+
+/*** sidebar position border radius ***/
+
+
+
+.pos-left.radius .sidebar-content {
+
+border-radius:0px 6px 6px 0px;
+
+-webkit-border-radius:0px 6px 6px 0px;
+
+-moz-border-radius:0px 6px 6px 0px;
+
+-o-border-radius:0px 6px 6px 0px;
+
+-khtml-border-radius:0px 6px 6px 0px}
+
+.pos-right.radius .sidebar-content {
+
+border-radius:6px 0px 0px 6px;
+
+-webkit-border-radius:6px 0px 0px 6px;
+
+-moz-border-radius:6px 0px 0px 6px;
+
+-o-border-radius:6px 0px 0px 6px;
+
+-khtml-border-radius:6px 0px 0px 6px}
+
+.pos-top.radius .sidebar-content {
+
+border-radius:0px 0px 6px 6px;
+
+-webkit-border-radius:0px 0px 6px 6px;
+
+-moz-border-radius:0px 0px 6px 6px;
+
+-o-border-radius:0px 0px 6px 6px;
+
+-khtml-border-radius:0px 0px 6px 6px}
+
+.pos-bottom.radius .sidebar-content {
+
+border-radius:6px 6px 0px 0px;
+
+-webkit-border-radius:6px 6px 0px 0px;
+
+-moz-border-radius:6px 6px 0px 0px;
+
+-o-border-radius:6px 6px 0px 0px;
+
+-khtml-border-radius:6px 6px 0px 0px}
+
+
+
+/*** sidebar position box shadow ***/
+
+
+
+.pos-left.shadow .sidebar-content {
+
+box-shadow:1px 1px 2px rgba(0, 0, 0, 0.2);
+
+-moz-box-shadow:1px 1px 2px rgba(0, 0, 0, 0.2);
+
+-webkit-box-shadow:1px 1px 2px rgba(0, 0, 0, 0.2)}
+
+.pos-right.shadow .sidebar-content {
+
+box-shadow:-1px 1px 2px rgba(0, 0, 0, 0.2);
+
+-moz-box-shadow:-1px 1px 2px rgba(0, 0, 0, 0.2);
+
+-webkit-box-shadow:-1px 1px 2px rgba(0, 0, 0, 0.2)}
+
+.pos-top.shadow .sidebar-content {
+
+box-shadow:0px 1px 2px rgba(0, 0, 0, 0.2);
+
+-moz-box-shadow:0px 1px 2px rgba(0, 0, 0, 0.2);
+
+-webkit-box-shadow:0px 1px 2px rgba(0, 0, 0, 0.2)}
+
+.pos-bottom.shadow .sidebar-content {
+
+box-shadow:0px -1px 2px rgba(0, 0, 0, 0.2);
+
+-moz-box-shadow:0px -1px 2px rgba(0, 0, 0, 0.2);
+
+-webkit-box-shadow:0px -1px 2px rgba(0, 0, 0, 0.2)}
+
+
+
+/*** sidebar position border ***/
+
+
+
+.pos-left.border .sidebar-content {border-width:1px 1px 1px 0px}
+
+.pos-right.border .sidebar-content {border-width:1px 0px 1px 1px}
+
+.pos-top.border .sidebar-content {border-width:0px 1px 1px 1px}
+
+.pos-bottom.border .sidebar-content {border-width:1px 1px 0px 1px}
+
+
+
+/*** colors ***/
+
+
+
+.dark, .dark a {color:#000}
+
+
+
+.blue .sidebar-content {background-color:#0078cd}
+
+.blue .sidebar-content:hover {background-color:#1787d6}
+
+
+
+.grey .sidebar-content {background-color:#8d8d8d}
+
+.grey .sidebar-content:hover {background-color:#9c9c9c}
+
+
+
+.green .sidebar-content {background-color:#639f04}
+
+.green .sidebar-content:hover {background-color:#70ad10}
+
+
+
+.yellow .sidebar-content {background-color:#c0a300}
+
+.yellow .sidebar-content:hover {background-color:#d8b806}
+
+
+
+.orange .sidebar-content {background-color:#cd7503}
+
+.orange .sidebar-content:hover {background-color:#e28f23}
+
+
+
+.red .sidebar-content {background-color:#bb0707}
+
+.red .sidebar-content:hover {background-color:#c81b1b}
+
+
+
+.purple .sidebar-content {background-color:#7800be}
+
+.purple .sidebar-content:hover {background-color:#9816e3}
+
+
+
+.pink .sidebar-content {background-color:#bd00b6}
+
+.pink .sidebar-content:hover {background-color:#e117da}
+
+
+
+.white .sidebar-content {background-color:#fff}
+
+.white .sidebar-content:hover {background-color:#c9c9c9}
+
+
+
+.black .sidebar-content {background-color:#000}
+
+.black .sidebar-content:hover {background-color:#000}
+

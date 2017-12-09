@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th {
+	padding: 0;
+	border: 0;
+	outline: 0;
+	/* [disabled]font-size:100%; */
+	background: transparent;
+	margin: 0px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+.clear {
+	clear: both;
+	height:0;
+	overflow:hidden
+}
+.clearfix:after {
+	content:".";
+	height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+.clearfix {
+	display:inline-block;
+}
+/* Hide from IE Mac \*/
+.clearfix {
+	display:block;
+}
+a:hover, a:focus {
+	text-decoration:none!important
+} 
+.content-wrapper{margin-top:3%}
+.inter-content{width: 100%;display:inline-block}
+ 
+/************************************************************************************** IE FIXING ******************************************************************/
+
+.responsive-design{color:#13D3F3\9} 
+.container {
+	width: 1038px\9;
+	margin: 0 auto\9
+}
+.col-md-3.col-xs-12 {
+	width: 25%\9;
+}
+.col-md-9 {
+	width: 75%\9;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+	position: relative\9;
+	min-height: 1px\9;
+	padding-right: 15px\9;
+	padding-left: 15px\9;
+}
+.service-landing-service-list ul {
+	background: inherit\9
+}
+.service-landing-service-list ul li:before {
+	display: none\9
+}
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+	float: left\9;
+}
+.col-md-12 {
+	width: 100%\9;
+}
+.col-md-11 {
+	width: 91.66666667%\9;
+}
+.col-md-10 {
+	width: 83.33333333%\9;
+}
+.col-md-9 {
+	width: 75%\9;
+}
+.col-md-8 {
+	width: 66.66666667%\9;
+}
+.col-md-7 {
+	width: 58.33333333%\9;
+}
+.col-md-6 {
+	width: 50%\9;
+}
+.col-md-5 {
+	width: 41.66666667%\9;
+}
+.col-md-4 {
+	width: 33.33333333%\9;
+}
+.col-md-3 {
+	width: 25%\9;
+}
+.col-md-2 {
+	width: 16.66666667%\9;
+}
+.col-md-1 {
+	width: 8.33333333%\9;
+}
+.header-bottom ul li {
+	padding: 0 7.2% 0 0\9;
+}
+.darkBluebg {
+	background-color: #1B2026;
+	display: inline-block;
+	width: 100%
+}
+.enjoytheservise img {
+	margin: 10px auto 40px;
+}
+.enjoytheservise h1 {
+	text-align: center;
+	margin: 0px 0 40px;
+	color: #fff;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 45px;
+}
+.enjoytheservise p {
+	font-size: 16px;
+	width: 88%;
+	margin: 0 auto 50px;
+	text-align: center;
+	line-height: 33px;
+	color:#fff;
+}
+.enjoymobileapp {
+	display: inline-block;
+	width: 100%;
+	margin-top: 30px;
+}
+.enjoymobileapp i {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 65px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.enjoymobileapp a {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	font-size: 20px;
+	margin-bottom: 20px;
+	color: #fff;
+	cursor: default
+}
+.image-onabsolute {
+	position: absolute;
+	left: 10%;
+	top: 0px;
+}
+.ioosdevelopments {
+	position: relative
+}
+.ioosdevelopments h1, .androisApps h1, .windowsApp h1 {
+	font-size: 40px;
+	margin-bottom: 50px;
+	color:#fff;
+	font-family: 'Dosis', sans-serif;
+}
+.ioosdevelopments h1 {
+	text-align: left
+}
+.ioosdevelopments ul li {
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	padding-left: 50px;
+	margin-bottom: 30px;
+}
+.ioosdevelopments ul li:before {
+	content: "\f442";
+	font-family: "Ionicons";
+	font-size: 30px;
+	position: absolute;
+	left: 0;
+	top: 4px;
+	color: #CD2026;
+}
+.ioosdevelopments.padding-50 {
+	padding: 8% 0 6%;
+	position: relative;
+	overflow: hidden;
+}
+.ioosdevelopments ul li h3 {
+	margin: 10px 0 20px;
+	font-family: 'Dosis', sans-serif;
+}
+.androisApps {
+	background-color: #1B2026;
+}
+.androisApps h1 {
+	color: #fff
+}
+.androisApps p {
+	color:#fff;
+}
+.windowsApp p {
+	font-size: 16px;
+	line-height: 30px;
+	color: #666;
+	margin-bottom: 15px;
+}
+.windowsApp.blackberry {
+	background-color: #f0f0f0;
+}
+.androisApps h1 {
+	margin-top: 39%
+}
+.windowsApp h1 {
+	margin-top: 23%;
+}
+.service-landing-service-list ul ul.services-ul {
+	background: none;
+	padding: 0;
+	margin-bottom: 25px;
+}
+.service-landing-service-list ul ul.services-ul li {
+	padding: 0!important;
+	width: 100%!important;
+	padding-left: 30px!important;
+	margin-bottom: 8px;
+	left: 0;
+}
+.service-landing-service-list ul ul.services-ul li:before {
+	content: '\f10c ';
+	border: none;
+	margin-left: -3px;
+	left: 0px;
+	font-size: 10px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #FFF;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #fff\9;
+}

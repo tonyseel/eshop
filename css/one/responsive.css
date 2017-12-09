@@ -1,0 +1,56 @@
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+	border: 0px;
+}
+@media screen and ( max-width: 1169px) { 
+.page-wrapper { 
+	width: 90%;
+}
+}
+@media screen and ( max-width: 767px) {
+.page-wrapper { 
+	width: 90%;
+}
+header { 
+	height: auto;
+}
+#logo { 
+	float: left;
+	width: 100%;
+	margin: 10px 0;
+	text-align: center;
+}
+#top-right { 
+	float: right;
+	margin: 0 0 10px 0;
+}
+.box01 .img-box { 
+	width: 100%;
+	margin-bottom: 20px;
+}
+.box01 .home-form-box { 
+	width: 100%;
+}
+.box02 .col01 { 
+	float: left;
+	width: 100%;
+}
+.box02 .col02 { 
+	float: left;
+	width: 100%;
+}
+.blue-box, .gray-box  { 
+	width: 100%;
+}
+.happy-client-box .video01 { 
+	width: 100%;
+}
+.happy-client-box .video02 { 
+	width: 100%;
+}
+.box03 ul li { 
+	width: 100%;
+}
+}

@@ -1,0 +1,364 @@
+/***************************
+LAYOUT DEFAULT STYLES
+***************************/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+
+* 
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	color: #333;
+}
+/***************************
+LAYOUT POSITIONING
+****************************/
+.page-margin-wrapper {
+	float: left;
+	width: 100%;
+}
+.page-wrapper {
+	margin: 0 auto;
+	width: 1170px;
+}
+/***************************
+TYPOGRAPHY - GLOBAL
+****************************/
+h1 { 
+	margin: 0 0 15px 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 36px;
+	font-weight: 600;
+	line-height: normal;
+}
+h3 { 
+	margin: 0 0 15px 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: normal;
+}
+p { 
+	margin: 0 0 15px 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #000;
+	text-align: justify;
+}
+/****************************LAYOUT STYLES****************************/
+
+/***************************
+HEADER SECTION
+****************************/
+header { 
+	float: left;
+	width: 100%;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+	background: #F7F7F7 none repeat scroll 0% 0%;
+	height: 70px;
+}
+#logo { 
+	float: left;
+	margin-top: 5px;
+}
+#top-right { 
+	float: right;
+	margin-top: 5px;
+}
+/***************************
+ARTICLE SECTION
+****************************/
+.box01 { 
+	float: left;
+	width: 100%;
+	padding: 30px 0;
+}
+.box01 .img-box { 
+	float: left;
+	width: 70%;
+	text-align: center;
+}
+.box01 .home-form-box { 
+	float: right;
+	width: 28%;
+}
+.box01 h1 { 
+	color: #00b0f0;
+	font-size: 46px;
+	text-align: center;
+	font-weight: 600;
+}
+.box01 h3 { 
+	color: #0070c0;
+	font-size: 22px;
+	text-align: center;
+	font-weight: 600;
+	margin-bottom: 50px;
+}
+.box02 { 
+	float: left;
+	width: 100%;
+	background: #f5f5f5; 
+	padding: 30px 0;
+}
+.box02 .col01 { 
+	float: left;
+	width: 38%;
+}
+.box02 .col02 { 
+	float: right;
+	width: 58%;
+}
+.box02 h1 { 
+	color: #00b0f0;
+	font-size: 33px;
+	font-weight: 600;
+	text-align: center;
+}
+.box03 { 
+	float: left;
+	width: 100%;
+	padding: 30px 0;
+}
+.box03 ul { 
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.box03 ul li { 
+	float: left;
+	width: 20%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+}
+.box03 h1 { 
+	font-size: 33px;
+	color: #00B0F0;
+	font-weight: 600;
+	text-align: center;
+}
+.box04 { 
+	float: left;
+	width: 100%;
+	background: #f5f5f5; 
+	padding: 30px 0;
+}
+.box04 h1 { 
+	text-align: center;
+	margin-bottom: 25px;
+	font-size: 33px;
+	color: #00B0F0;
+	font-weight: 600;
+}
+.box04 .btn { 
+	margin:  0 auto;
+	width: 160px;
+	height: 46px;
+	line-height: 46px;
+	color: #fff;
+	background: #008000;
+	display: block;
+	text-align: center;
+	border-radius: 6px;
+	font-size: 18px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 1px rgba(0, 0, 0, 0.075);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+.box04 .btn:hover { 
+	background: #07aa06;
+}
+/***************************
+COMMON STYLES
+****************************/
+.clearfix {
+	clear: both;
+}
+
+/***************************
+FOOTER SECTION
+****************************/
+footer { 
+	float: left;
+	width: 100%;
+	background: #404040;
+	color: #fff;
+	padding: 15px 0;
+}
+footer p { 
+	text-align: center;
+	margin: 0 0 5px 0;
+	color: #fff;
+	line-height: normal;
+	font-size: 13px;
+}
+/***************************
+USER
+****************************/
+.blue-box { 
+	float: left;
+	
+	background: #00b0f0;
+	padding: 20px;
+}
+.gray-box { 
+	float: left;
+	width: 50%;
+	background: #404040;
+	padding: 20px;
+}
+.blue-box ul, .gray-box ul { 
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.blue-box ul li, .gray-box ul li { 
+	margin: 0;
+	padding: 0 0 0 24px;
+	list-style: none;
+	display: list-item;
+	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
+	background: url(../../image/one/arrow01.png) 0 4px no-repeat;
+}
+.happy-client-box { 
+	float: left;
+	width: 100%;
+	margin-top: 30px;
+}
+.happy-client-box .video01 { 
+	float: left;
+	width: 48%;
+}
+.happy-client-box .video02 { 
+	float: right;
+	width: 48%;
+}
+.happy-client-box p { 
+	text-align: center;
+	font-style: italic;
+	margin-bottom: 0;
+}
+.happy-client-box iframe { 
+	margin: 0 auto 20px auto;
+	width: 80%;
+	display: block;
+}
+.happy-client-box .name {
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-weight: 600;
+}
+#mc_embed_signup_scroll { 
+	 float: left;
+	 width: 100%;
+	 border: 1px solid #ccc;
+}
+#mc_embed_signup_scroll h2 { 
+	background: #0070c0;
+	float: left;
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+	color: #fff;margin-top:0px;
+}
+#mc_embed_signup_scroll .button { 
+	float: left;
+	width: 90%;
+	margin: 0 5%;
+	background: #00b050;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 6px;
+	height: 46px;
+	line-height: 46px;
+	border: 0 none;
+	margin-bottom: 15px;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+} 
+#mc_embed_signup_scroll .button:hover { 
+	background: #00853c;
+}
+#mc_embed_signup_scroll .mc-field-group { 
+	float: left;
+	width: 90%;
+	margin: 0 5%;
+}
+#mc_embed_signup_scroll .mc-field-group label { 
+	float: left;
+	width: 100%;
+	margin-bottom: 5px;
+}
+#mc_embed_signup_scroll .mc-field-group input { 
+	background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+    margin-bottom: 15px;
+}
+#mc_embed_signup_scroll .mc-field-group input:focus { 
+	border-color: #66afe9;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: 0 none;
+}
+#mc_embed_signup_scroll .indicates-required { 
+	float: left;
+	width: 90%;
+	text-align: right;
+	margin: 10px 5%;
+	font-style: italic;
+}
+.mc-field-group h4{    font-size: 20px;
+    margin: 0px 22px 10px 10px;}
+
+.mc-field-group p{line-height:13px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+    color: #000;
+    text-align: justify;}
+    .mc-field-group img{text-align: center;
+      margin: 7px 4px;}

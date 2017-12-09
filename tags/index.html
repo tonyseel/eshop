@@ -1,0 +1,20 @@
+--- 
+layout: default 
+---
+<div class="widget recent-posts">
+    <div class="post-content">
+        {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %} {% assign sortedTags = site_tags | split:',' | sort %} {% for tag in sortedTags %}
+        <h2 id="{{ tag | cgi_escape }}" class="title title-small">{{ tag }}</h2>
+        <ul>
+            {% for post in site.tags[tag] %}
+            <li class="cat-item cat-item-1"><a href="{{site.baseurl}}{{post.url}}" title="Permanent link to{site.baseurl}}{{post.url}}">{{post.title}} </a><span>|</span>
+                <time datetime="2015-08-13" pubdate>{{post.date | date:"%B %-d, %Y"}}
+                </time>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+    </div>
+    <!-- end .post-content -->
+</div>
+<!-- end .widget .recent-posts -->

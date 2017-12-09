@@ -1,0 +1,81 @@
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+	border: 0px;
+}
+@media screen and ( max-width: 999px) { 
+.page-wrapper { 
+	width: 90%;
+}
+.we-suggest { 
+	display:none;
+}
+.quick-contact-box { 
+	width:100%;
+	margin-left:0;
+}
+.main-btn { 
+	width:60%;
+}
+}
+@media screen and ( max-width: 767px) {
+.page-wrapper { 
+	width: 90%;
+}
+header { 
+	height: auto;
+}
+#logo { 
+	float: left;
+	width: 100%;
+	margin: 10px 0;
+	text-align: center;
+}
+.welcome-box { 
+	width: 100%;
+}
+.welcome-box .col01 { 
+	width:100%;
+}
+.welcome-box .col02 { 
+	width:100%;
+}
+
+.main-btn { 
+	width: 100%;
+	font-size: 15px;
+}
+.build-box .col01 { 
+	width:100%;
+	margin-bottom:20px;
+}
+.build-box .col02 { 
+	width:100%;
+	margin-bottom:20px;
+}
+.services-box .box { 
+	margin-right: 0;
+	width: 100%;
+}
+.quick-contact-box { 
+	width: 100%;
+}
+.faq-box { 
+	float: left;
+	width: 100%;
+}
+.faq-img-box { 
+	display: none;
+}
+#footer-icons ul li { 
+	float: left;
+	width: 50%;
+	min-height: 120px;
+}
+#banner { 
+	float: left;
+	width: 100%;
+	background: rgba(0, 0, 0, 0) url("../images/banner-bg.gif") no-repeat center top;
+}
+}

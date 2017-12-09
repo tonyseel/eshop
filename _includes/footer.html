@@ -1,0 +1,85 @@
+<footer>
+    <div class="wrapper">
+        <div class="column column-wide">
+            <div class="widget widget_text" id="text-2">
+                <p class="title">Text Widget</p>
+                <div class="textwidget">
+                    <p>WordPress Education Theme,
+                        <br /> 123 University Boulevard, Chicago
+                        <br /> 1-800-123-4-567 or (0-800) 123-4567</p>
+                    <p><em>More about <a href="" target="_blank">Erudito Business Theme</a> &raquo;</em></p>
+                </div>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+        </div>
+        <!-- end .column -->
+        <div class="column">
+            <div class="widget widget_text" id="text-3">
+        
+                <p class="title">About Us</p>
+                <div class="textwidget">{{site.description | strip_html | truncatewords:28}} 
+                <a href="{{site.baseurl}}/about/">Read more</a></div>
+
+                <div class="cleaner">&nbsp;</div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+        </div>
+        <!-- end .column -->
+        <div class="column">
+            <div class="widget widget_meta" id="meta-3">
+                <p class="title">Meta</p>
+                <ul>
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+                    <li><a href="#">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+                </ul>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+        </div>
+        <!-- end .column -->
+        <div class="column">
+            <div class="widget widget_pages" id="pages-2">
+                <p class="title">Pages</p>
+                <ul>
+                    <li class="page_item page-item-26"><a href="#">Admissions</a></li>
+                    <li class="page_item page-item-18"><a href="#">Events Archive</a></li>
+                    <li class="page_item page-item-10 page_item_has_children"><a href="#">Page Templates</a>
+                        <ul class="children">
+                            <li class="page_item page-item-16"><a href="#">Default Template</a></li>
+                            <li class="page_item page-item-12"><a href="#">Full Width Page</a></li>
+                            <li class="page_item page-item-130"><a href="#">Shortcodes</a></li>
+                            <li class="page_item page-item-14"><a href="#">Sidebar on the Left Side</a></li>
+                        </ul>
+                    </li>
+                    <li class="page_item page-item-34"><a href="#">Research</a></li>
+                </ul>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+        </div>
+        <!-- end .column -->
+        <div class="column column-last">
+            <div class="widget widget_categories" id="categories-2">
+                <p class="title">Categories</p>
+               {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %} {% assign sortedTags = site_tags | split:',' | sort %}
+                    <ul id="menu-third-menu" class="menu">
+                        <li><a href="{{site.baseurl}}/tags/">All posts</a></li>
+                        {% for tag in sortedTags limit:4 %}
+                         <li><a href="{{site.baseurl}}/tags/#{{ tag | cgi_escape }}">{{ tag }} ({{ site.tags[tag].size }})</a></li>
+                        {% endfor %}
+                    </ul>
+
+                <div class="cleaner">&nbsp;</div>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+        </div>
+        <!-- end .column -->
+        <div class="cleaner">&nbsp;</div>
+        <div class="divider">&nbsp;</div>
+        <p class="copyright">Copyright &copy; 2017 Erudito. All Rights Reserved</p>
+        <div class="cleaner">&nbsp;</div>
+    </div>
+    <!-- end .wrapper -->
+</footer>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title>
+    <link rel="shortcut icon" type="image/png" href="{{site.baseurl}}/image/blog/favicon.png"/>
+    <script type='text/javascript' src='js/jquery-3.1.1.min.js'></script>
+     <script type='text/javascript' src='js/jquery.bxslider.js'></script>
+   <link rel="stylesheet" href="{{site.baseurl}}/css/font-awesome.mine100.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{site.baseurl}}/css/stylee100.css" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" id="socicon-css" href="{{site.baseurl}}/css/sociconcf88.css" type="text/css" media="all" />
+   
+    <meta name="generator" content="WordPress 4.7.2" />
+    <style type="text/css"></style>
+</head>
+
+<body class="home blog">
+    <div id="container">
+        <div class="wrapper wrapper-main">
+            <header>
+                <div id="logo">
+                    <h1>
+				<a href="#" title="WPZOOM Theme Demo">Erudito</a>
+			  </h1>
+                </div>
+                <!-- end #logo -->
+                <nav id="top-menu">
+                    <ul>
+                        <li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"><a href="{{site.baseurl}}/about/">About-Us</a></li>
+                        <li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a href="{{site.baseurl}}/privacy/">Privacy</a></li>
+                        <li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="{{site.baseurl}}/sitemap">Sitemap</a></li>
+                        <li class="social-icons">
+                            <a href="#" rel="external,nofollow"><img src="{{site.baseurl}}/image/blog/facebook_small.png" width="16" height="16" alt="" /></a>
+                            <a href="#" rel="external,nofollow"><img src="{{site.baseurl}}/image/blog/twitter_small.png" width="16" height="16" alt="" /></a>
+                            <a href="#" rel="external,nofollow"><img src="{{site.baseurl}}/image/blog/rss_small.png" width="16" height="16" alt="" /></a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- end #top-menu -->
+                <div id="header-helpful">
+                    <span class="action">Call us now: <span class="value">2700-123-456</span></span>
+                </div>
+                <!-- end #header-helpful -->
+                <div class="cleaner">&nbsp;</div>
+            </header>
+            <nav id="main-menu" class="clearfix">
+                <div class="search-form">
+                    <form method="get" id="searchformtop" action="{{site.baseurl}}/search/">
+                        <input type="text" name="s" id="setop" onblur="if (this.value == '') {this.value = 'search';}" onfocus="if (this.value == 'search') {this.value = '';}" value="search" class="text" />
+                        <input type="image" src="{{site.baseurl}}/image/blog/icon_form.png" id="searchsubmittop" class="submit" />
+                    </form>
+                </div>
+                <!-- end .search-form -->
+                <a class="btn_menu" id="toggle-main" href="#"></a>
+                {% assign url_parts = page.url | split: '/' %}
+                <ul id="menu-main" class="dropdown">
+                    <li {% if url_parts[1]=='index' %}class="active" {% endif %}><a class='page-link' href="{{site.baseurl}}">Home</a></li>
+                    <li {% if url_parts[1]=='about' %}class="active" {% endif %}><a class='page-link' href="{{site.baseurl}}/about/">About Us</a></li>
+                    <li {% if url_parts[1]=='blog' %}class="active" {% endif %}><a class='page-link' href="{{site.baseurl}}/blog/">Blog</a></li>
+                    <li {% if url_parts[1]=='privacy' %}class="active" {% endif %}><a class='page-link' href="{{site.baseurl}}/privacy/">Privacy</a></li>
+                    <li {% if url_parts[1]=='contact' %} class="active" {% endif %}><a class='page-link' href="{{site.baseurl}}/contact/">Contact</a></li>
+                </ul>
+                <li class="cleaner">&nbsp;</li>
+            </nav>
+            <!-- end #main-menu -->
+            <div id="main" class="homepage">
+                <div id="content">
+                    <!-- end #featured-posts-wrapper -->
+                    {{content}} 
+                      {% if page.url == "/" %} 
+                         {% include recent-posts.html %} 
+                      {% endif %}
+                </div>
+                <aside id="homepage">
+                    <div class="widget widget_nav_menu" id="nav_menu-2">
+                        <p class="title">Hot topics</p>
+                        <div class="menu-third-menu-container">
+                            <ul id="menu-third-menu" class="menu">
+                                {% include tags.html %}
+                            </ul>
+                        </div>
+                        <div class="cleaner">&nbsp;</div>
+                    </div>
+                    {% include social.html %}
+                    <div class="cleaner">&nbsp;</div>
+                    <div id="aside-fade">&nbsp;</div>
+                    <!-- end #aside-fade -->
+                </aside>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+            <!-- end #main -->
+        </div>
+        <!-- end .wrapper .wrapper-main -->
+        {% include footer.html %}
+    </div>
+    <!-- end #container -->
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+        jQuery('.bxslider').bxSlider();
+    });
+    </script>
+</body>
+
+</html>

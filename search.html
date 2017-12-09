@@ -1,0 +1,29 @@
+---
+layout: search
+---
+<h1 class="title title-large">Search Results</h1>
+<div class="category-excerpt">
+<p>Each of your categories can also have a description, so that it will organize your posts much more efficiently. This is yet another SEO advantage.</p>
+</div>
+<ul id="posts-archive"></ul>
+<li>
+<script>
+  window.store = {
+    {% for post in site.posts %}
+      {% if post.categories contains 'blog' %}
+      "{{ post.url | slugify }}": {
+        "title": "{{ post.title | xml_escape }}",
+        "image": "{{site.baseurl | xml_escape }}/image/blog/{{post.image | xml_escape }}",
+        "date": "{{ post.date | date:"%B %-d, %Y" | xml_escape }}",
+        "category": "{{ post.category | xml_escape }}",
+        "content": {{ post.content | strip_html | strip_newlines | jsonify }},
+        "url": "{{site.baseurl | xml_escape }}{{ post.url | xml_escape }}"        
+      }
+      {% unless forloop.last %},{% endunless %}
+     {% endif %}
+    {% endfor %}
+  };
+</script>
+</li>
+<script src="{{site.baseurl}}/js/lunr.min.js"></script>
+<script src="{{site.baseurl}}/js/search.js"></script>
