@@ -1,34 +1,17 @@
 --- 
 layout: default 
 ---
+<div class="banner-blog">
+		<div class="container">
+			<h1>{{page.title}}</h1>
+		
+	</div>
+	</div>
+	<div class="blog-content">
+	    <div class="container">
+	    <div class="inner-section">
+                <p>{{content}}</p>
+			</div>
+		</div>
+	</div>
 
-<div class="border-main"></div>
-    <div class="contents home-contents contents_inner">
-    	<div class="container">
-        <h2>{{page.title}}</h2>
-            <div class="clear_20"></div>
-        	<div class="row">
-            	<div class="col-lg-12">
-                	<ul class="product-nav">
-                	{{content}}
-                       {% for car in site.data.car-section %}
-                       <li>
-                            <div class="gallery-box">
-                                <a href="subpage/1/car1.html"><img src="{{site.baseurl}}/{{car.productimg}}"></a>
-                                <p><a href="subpage/1/car1.html">{{car.productcontent}}</a></p>
-                                <div class="glr-btns">
-                                	<ul>
-                                    	<li><a href="subpage/1/car1.html" class="dtl">Car Details</a></li>
-                                    	<li><a href="subpage/1/car1.html">Get Approved</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        {% endfor %}   
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-   
